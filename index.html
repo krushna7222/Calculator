@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #outer {
+        width: 330px;
+        height: auto;
+        border: 2px solid black;
+        background-color: aquamarine;
+        padding: 20px;
+      }
+      input[type="text"] {
+        width: 100%;
+        border: none;
+        font-size: 24px;
+        outline: none;
+      }
+      input[type="reset"] {
+        font-size: 15px;
+        border: none;
+        margin-top: 15px;
+        padding: 3px 5px;
+        background-color: rgb(241, 45, 45);
+      }
+      #ans {
+        width: 100%;
+        height: 30px;
+        background-color: white;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+      }
+      p {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 10px;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <form action="">
+        <input type="text" />
+        <div id="ans"></div>
+        <input type="reset" />
+      </form>
+      <div class="row">
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>+</p>
+      </div>
+      <div class="row">
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>-</p>
+      </div>
+      <div class="row">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>*</p>
+      </div>
+      <div class="row">
+        <p>0</p>
+        <p>.</p>
+        <p>=</p>
+        <p>/</p>
+      </div>
+    </div>
+  </body>
+</html>
