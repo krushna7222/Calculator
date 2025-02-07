@@ -41,7 +41,7 @@ h2 {
   padding-right: 30px;
   background: none;
   color: white;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .calculator-buttons {
@@ -57,6 +57,8 @@ h2 {
   color: white;
   font-size: 25px;
   font-weight: 600;
+  border-radius: 40px;
+  border: none;
 }
 #zero {
   grid-column-start: 1;
@@ -78,12 +80,10 @@ h2 {
   .calculator-body {
     height: auto;
     width: 100%;
-    /* margin-left: 2.5%; */
     background-color: var(--body-color);
   }
 
   .calculator-buttons {
-    /* height: 400px; */
     width: 95%;
     padding: 10px;
   }
