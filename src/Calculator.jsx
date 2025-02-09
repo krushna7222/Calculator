@@ -5,12 +5,13 @@ const Calculator = () => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
-    const value = e.target.value.replace(/[^0-9+\-*/.]/g, "");
-    setInputValue(value);
+    setInputValue(e.target.value.replace(/[^0-9+\-*/.]/g, ""));
+    // const value = e.target.value.replace(/[^0-9+\-*/.]/g, "");
+    // setInputValue(value);
   };
 
-  const handleButtonClick = (value) => {
-    setInputValue((prev) => prev + value);
+  const handleButtonClick = (inputValue) => {
+    setInputValue((prev) => prev + inputValue);
   };
 
   const ShowAnswer = () => {
@@ -42,7 +43,9 @@ const Calculator = () => {
         </div>
         <div className="calculator-buttons">
           <button onClick={() => setInputValue("")}>AC</button>
-          <button onClick={handleBackspace}>⌫</button>
+          <button onClick={handleBackspace}>
+            <i className="fa-solid fa-delete-left"></i>
+          </button>
           <button onClick={() => handleButtonClick("/")}>/</button>
           <button onClick={() => handleButtonClick("*")}>*</button>
           <button onClick={() => handleButtonClick("7")}>7</button>
@@ -56,6 +59,7 @@ const Calculator = () => {
           <button onClick={() => handleButtonClick("1")}>1</button>
           <button onClick={() => handleButtonClick("2")}>2</button>
           <button onClick={() => handleButtonClick("3")}>3</button>
+          <button onClick={() => handleButtonClick("%")}>%</button>
           <button id="ans" onClick={ShowAnswer}>
             =
           </button>
