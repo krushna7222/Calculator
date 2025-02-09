@@ -12,12 +12,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #303136;
 }
 
 .calculator-body {
   height: auto;
+  padding: 20px 0;
   width: 450px;
   background-color: var(--body-color);
+  border-radius: 20px;
 }
 h2 {
   text-align: center;
@@ -29,7 +32,7 @@ h2 {
 }
 
 .calculator-display {
-  height: 250px;
+  height: 200px;
   width: 100%;
 }
 #input-box {
@@ -80,8 +83,12 @@ h2 {
   }
   .calculator-body {
     height: auto;
-    width: 100%;
+    width: 100vw;
     background-color: var(--body-color);
+  }
+  .calculator-display {
+    height: 250px;
+    width: 100%;
   }
 
   .calculator-buttons {
@@ -89,7 +96,7 @@ h2 {
     padding: 10px;
   }
   .calculator-buttons > button {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 900;
   }
 }
