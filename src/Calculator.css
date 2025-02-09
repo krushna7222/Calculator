@@ -65,7 +65,8 @@ h2 {
   grid-column-end: 3;
 }
 #ans {
-  grid-row-start: 4;
+  background-color: rgb(31, 163, 31);
+  grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 4;
   grid-column-end: 5;
